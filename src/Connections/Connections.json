@@ -1,0 +1,84 @@
+{
+  "01a1a5ce-da79-48bc-b885-c2991c6a2af3": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/alexsp/sporelease/1.0.1682.3673/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://maynoothuniversity-my.sharepoint.com/personal/claire_edem_2021_mumail_ie": {
+        "dataSources": {
+          "Youtube vid": {
+            "tableName": "126bf76a-ee02-4046-a468-63cdecaee76f"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Youtube vid"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "01a1a5ce-da79-48bc-b885-c2991c6a2af3"
+  },
+  "605949b0-4691-4d18-a881-a256c7d4920b": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1680/1.0.1680.3652/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "8f8b860c-6f38-44c4-b29c-ff282f4213c4": {
+          "value": "shared_office365"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "d0ca7cd6-98f8-4ac2-8795-3c1c88081d2a"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_office365": {
+          "value": "8f8b860c-6f38-44c4-b29c-ff282f4213c4"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "d0ca7cd6-98f8-4ac2-8795-3c1c88081d2a"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ClickabuttoninPowerAppstosendanemail"
+    ],
+    "dependencies": {
+      "shared_office365": "8f8b860c-6f38-44c4-b29c-ff282f4213c4"
+    },
+    "dependents": [],
+    "id": "605949b0-4691-4d18-a881-a256c7d4920b"
+  },
+  "8f8b860c-6f38-44c4-b29c-ff282f4213c4": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1676/1.0.1676.3617/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "605949b0-4691-4d18-a881-a256c7d4920b"
+    ],
+    "id": "8f8b860c-6f38-44c4-b29c-ff282f4213c4"
+  }
+}

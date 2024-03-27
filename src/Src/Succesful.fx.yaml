@@ -1,0 +1,39 @@
+"Succesful As screen.'tabletLayout_Success_ver3.0'":
+
+    iconCircle3 As circle.Circle:
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =(Parent.Height/2 - Self.Height/2) * .7
+        ZIndex: =1
+
+    iconCheck3 As icon.Check:
+        Height: =iconCircle3.Height
+        Icon: =Icon.Check
+        PaddingBottom: =Self.PaddingTop
+        PaddingLeft: =Self.PaddingTop
+        PaddingRight: =Self.PaddingTop
+        PaddingTop: =24
+        Width: =iconCircle3.Width
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =(Parent.Height/2 - Self.Height/2) * .7
+        ZIndex: =2
+
+    LblSuccessMsg3 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Height: =iconCircle3.Height
+        Size: =20
+        Text: ="This was successfully completed"
+        Width: =Parent.Width * 0.75
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =iconCheck3.Y + iconCheck3.Height + 100
+        ZIndex: =3
+
+    Button15 As button:
+        Height: =38
+        OnSelect: =Navigate('Login/Registration')
+        Text: ="Login"
+        Width: =187
+        X: =589
+        Y: =533
+        ZIndex: =4
+

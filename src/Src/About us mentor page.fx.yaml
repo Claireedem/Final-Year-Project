@@ -1,0 +1,285 @@
+"'About us mentor page' As screen.'autoLayout_Sidebar_ver1.0'":
+    OnVisible: =
+
+    ScreenContainer1_11 As groupContainer.verticalAutoLayoutContainer:
+        Fill: =RGBA(245, 245, 245, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =16
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =16
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =16
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer1_11 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =2
+
+            Header1_11 As Header:
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =75
+                LayoutMinHeight: =75
+                LayoutMinWidth: =Parent.Width
+                Logo: ='STEMP PASSPORTS'
+                OnSelectLogo: =false
+                Title: ="About us "
+                UserEmail: =LoggedInMentorEmail
+                UserImage: =User().Image
+                UserName: =LoggedInMentorName
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+            Label15_3 As label:
+                Text: ="Text"
+                ZIndex: =2
+
+        BottomContainer1_11 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(245, 245, 245, 1)
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutGap: =16
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutWrap: =true
+            PaddingBottom: =2
+            PaddingLeft: =2
+            PaddingRight: =2
+            PaddingTop: =2
+            ZIndex: =3
+
+            SidebarContainer1_11 As groupContainer.verticalAutoLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =200
+                LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =5
+                PaddingRight: =5
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                ZIndex: =4
+
+                "TabList1_11 As 'Tab list'.pcfdataset":
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Alignment: ='TabList.Alignment'.Vertical
+                    DefaultSelectedItems: =LookUp(MenuData,GoToScreen = App.ActiveScreen)
+                    DisplayMode: =DisplayMode.Edit
+                    FillPortions: =1
+                    Height: =55
+                    Items: =MenuData1
+                    LayoutMinHeight: =55
+                    LayoutMinWidth: =Parent.Width-10
+                    OnSelect: =Navigate(Self.Selected.GoToScreen)
+                    Width: =280
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                    MenuTitle1_11 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="MenuTitle"
+                        FieldName: ="MenuTitle"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =1
+                        ZIndex: =6
+
+            MainContainer1_11 As groupContainer.verticalAutoLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =7
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                ZIndex: =5
+
+    "Gallery11 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =494
+        Items: ='Youtube vid'
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =Min(440, Self.Height - 60)
+        Width: =595
+        X: =656
+        Y: =236
+        ZIndex: =1
+
+        Image12 As image:
+            Height: =296
+            Image: =ThisItem.YoutubeLink
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =Parent.TemplateWidth - 32
+            X: =(Parent.TemplateWidth / 2) - (Self.Width / 2)
+            Y: =16
+            ZIndex: =1
+
+        Title11 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 64
+            X: =32
+            Y: =Image12.Y + Image12.Height + 16
+            ZIndex: =2
+
+        Subtitle10 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Created By'.Claims
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title11.Width
+            X: =Title11.X
+            Y: =Title11.Y + Title11.Height + 8
+            ZIndex: =3
+
+        Video3 As videoPlayback:
+            Media: =ThisItem.YoutubeLink
+            Width: =440
+            Y: =245
+            ZIndex: =4
+
+    Image10_1 As image:
+        Height: =212
+        Image: ='Website image (14)'
+        ImagePosition: =ImagePosition.Tile
+        Width: =1109
+        X: =236
+        Y: =92
+        ZIndex: =2
+
+    TextInput1_1 As text:
+        BorderThickness: =0
+        Default: ="Our Mission"
+        FontWeight: =FontWeight.Bold
+        Size: =18
+        X: =256
+        Y: =319
+        ZIndex: =3
+
+    Label6_1 As label:
+        Height: =129
+        Text: ="ALL’s activities aim to enable people across their life course - especially those who have been marginalized - to achieve well-being, and fully participate in society. Our research promotes human rights-based and person-centred systems, evidence-based policies and laws, as well as the development and application of appropriate technologies that empower people and enhance social inclusion."
+        Width: =1073
+        X: =256
+        Y: =344
+        ZIndex: =4
+
+    "Gallery7 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =520
+        Items: ='Youtube vid'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =516
+        Width: =656
+        X: =457
+        Y: =204
+        ZIndex: =5
+
+        Image7 As image:
+            Height: =72
+            Image: =ThisItem.YoutubeLink
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =72
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title8 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =false
+            Width: =Parent.TemplateWidth - 173
+            X: =103
+            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle6.Size * 1.8)) / 2
+            ZIndex: =2
+
+        Subtitle6 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Created By'.Claims
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =false
+            Width: =Title8.Width
+            X: =Title8.X
+            Y: =Title8.Y + Title8.Height
+            ZIndex: =3
+
+        Separator8 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle11 As rectangle:
+            Height: =Parent.TemplateHeight - Separator8.Height
+            OnSelect: =Select(Parent)
+            Visible: =false
+            Width: =4
+            ZIndex: =6
+
+        Video4 As videoPlayback:
+            Height: =261
+            Media: =ThisItem.YoutubeLink
+            Width: =552
+            Y: =254
+            ZIndex: =7
+

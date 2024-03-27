@@ -1,0 +1,100 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr0f7_studentsnamesstempincs",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr0f7_studentsnamesstempinc",
+    "MaxGetRowsCount": 500,
+    "Name": "Students Names - STEMP.Incs",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0f7_email": "Email",
+      "cr0f7_firstname": "First Name",
+      "cr0f7_school": "School",
+      "cr0f7_SchoolID": "SchoolID",
+      "cr0f7_studentid": "StudentID",
+      "cr0f7_studentsnamesstempinc_AsyncOperations": "System Jobs",
+      "cr0f7_studentsnamesstempinc_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr0f7_studentsnamesstempinc_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr0f7_studentsnamesstempinc_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr0f7_studentsnamesstempinc_ProcessSession": "Process Sessions",
+      "cr0f7_studentsnamesstempinc_SyncErrors": "Sync Errors",
+      "cr0f7_studentsnamesstempincid": "Students Names - STEMP.Inc",
+      "cr0f7_surname": "Surname",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Students Names - STEMP.Incs",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Students Names - STEMP.Incs (Views)",
+    "Name": "_cr0f7_studentsnamesstempinc_views",
+    "RelatedEntityName": "Students Names - STEMP.Incs",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0434ac14-3583-46cd-abb9-b3322badf131": "Students Names - STEMP.Inc Advanced Find View",
+      "8264582e-4afb-46b4-b8fc-d07e61ae2867": "Active Students Names - STEMP.Inc",
+      "8eaff5d2-509b-4ae3-9c68-9bf811ca4395": "Students Names - STEMP.Inc Lookup View",
+      "941a06c0-c4ee-477a-b1b5-03870e11c459": "Inactive Students Names - STEMP.Inc",
+      "f1752d25-ae42-484a-a1e3-257e2de2c2e8": "Students Names - STEMP.Inc Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Students Names - STEMP.Incs)",
+    "Name": "cr0f7_studentsnamesstempinc_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Students Names - STEMP.Incs"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Students Names - STEMP.Incs",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Students Names - STEMP.Incs)",
+    "Name": "cr0f7_studentsnamesstempinc_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Students Names - STEMP.Incs"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Students Names - STEMP.Incs",
+    "Type": "OptionSetInfo"
+  }
+]

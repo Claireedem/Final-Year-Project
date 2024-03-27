@@ -1,0 +1,133 @@
+"'Venue admin login' As screen":
+    OnVisible: |-
+        =UpdateContext({var_Pass :false})
+
+    Container1_2 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Bold
+        Height: =540
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Width: =1029
+        X: =167
+        Y: =139
+        ZIndex: =1
+
+        Label6_4 As label:
+            FontWeight: =FontWeight.Semibold
+            Text: ="Password"
+            X: =84
+            Y: =263
+            ZIndex: =1
+
+        TextInput1_4 As text:
+            Default: =
+            FocusedBorderThickness: =2
+            Height: =57
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Mode: =If(var_Pass,TextMode.Password,TextMode.SingleLine)
+            Width: =860
+            X: =84
+            Y: =316
+            ZIndex: =2
+
+        Icon3_2 As icon.View:
+            Height: =60
+            Icon: =If(var_Pass, Icon.View, Icon.Hide)
+            OnSelect: |-
+                =UpdateContext({var_Pass :!var_Pass})
+            Width: =34
+            X: =886
+            Y: =316
+            ZIndex: =3
+
+        Container2_2 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.Bold
+            Height: =56
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Width: =170
+            X: =750
+            Y: =418
+            ZIndex: =4
+
+    "'Maynooth Logo_8' As image":
+        Height: =138
+        Image: =Maynooth
+        Width: =171
+        X: =32
+        Y: =16
+        ZIndex: =2
+
+    Label5_2 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =20
+        Text: ="LOGIN"
+        X: =203
+        Y: =184
+        ZIndex: =3
+
+    Label6_5 As label:
+        FontWeight: =FontWeight.Semibold
+        Text: ="Email"
+        X: =256
+        Y: =272
+        ZIndex: =4
+
+    TextInput1_5 As text:
+        Clear: =true
+        Default: =
+        FocusedBorderThickness: =2
+        Height: =57
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Width: =872
+        X: =245
+        Y: =324
+        ZIndex: =5
+
+    Button1_2 As button:
+        Height: =64
+        OnSelect: |
+            =// Look up the record in Venue based on the entered email
+            Set(currentVenue, LookUp(Venues_1, 'Contact Email' = TextInput1_5.Text));
+            
+            // Check if the lookup was successful and if the entered password matches
+            If(
+                !IsBlank(currentVenue) && currentVenue.Password = TextInput1_4.Text,
+                //Set(currentUser, LookUp(SchoolAdmins, Email = TextInput1_3.Text));
+                Set(LoggedInVenueName, currentVenue.'Venue Name');
+                Set(LoggedInVenueEmail, currentVenue.'Contact Email');
+                Set(LoggedInVenueDOR, currentVenue.'Date Of Registration');
+                 Set(LoggedInVenueID,currentVenue.VenueID );
+                 Set(LoggedInVenueNumber,currentVenue.'Contact Number');
+                 Set(LoggedInVenuePassword,currentVenue.Password );
+                // If credentials match, navigate to 'school portal'
+                Navigate('Venue Portal'),
+                // If credentials don't match, show an error notification
+                Notify("Email or Password is incorrect. Please try again!", NotificationType.Error)
+            );
+            Reset(TextInput1_5);
+            Reset(TextInput1_4);
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: ="LOGIN"
+        Width: =176
+        X: =912
+        Y: =552
+        ZIndex: =6
+
+    Arrow1_2 As arrow.backArrow:
+        Height: =41
+        OnSelect: =Navigate('Login/Registration', Transition)
+        Width: =35
+        X: =52
+        Y: =664
+        ZIndex: =7
+

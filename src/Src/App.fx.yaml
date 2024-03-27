@@ -1,0 +1,19 @@
+App As appinfo:
+    BackEnabled: =true
+    Formulas: |-
+        =//Sidebar nav for School admins
+        MenuData = [{MenuTitle:"Home",GoToScreen:'School Portal'},{MenuTitle:"Students",GoToScreen:'Students List'},{MenuTitle:"Events",GoToScreen:'School Events Registration'},{MenuTitle:"User Profile",GoToScreen:'User Profile'},{MenuTitle:"About us",GoToScreen:'About Us'},{MenuTitle:"Logout",GoToScreen:'Login/Registration'}];
+        
+        //sidebar nav for Mentors
+        MenuData1 = [{MenuTitle:"Home",GoToScreen:'Mentor Portal'},{MenuTitle:"Events",GoToScreen:'Mentor Events Registration'},{MenuTitle:"User Profile",GoToScreen:'Mentor Profile'},{MenuTitle:"About us",GoToScreen:'About us mentor page'},{MenuTitle:"Logout",GoToScreen:'Login/Registration'}];
+    OnStart: =
+    StartScreen: =
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

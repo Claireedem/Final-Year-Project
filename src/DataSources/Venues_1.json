@@ -1,0 +1,101 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr0f7_venueses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr0f7_venues",
+    "MaxGetRowsCount": 500,
+    "Name": "Venues_1",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0f7_adminid": "VenueID",
+      "cr0f7_contactemail": "Contact Email",
+      "cr0f7_contactnumber": "Contact Number",
+      "cr0f7_dateofregistration": "Date Of Registration",
+      "cr0f7_password": "Password",
+      "cr0f7_passwordconfirmation": "Password Confirmation",
+      "cr0f7_venuename": "Venue Name",
+      "cr0f7_venues_AsyncOperations": "System Jobs",
+      "cr0f7_venues_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr0f7_venues_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr0f7_venues_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr0f7_venues_ProcessSession": "Process Sessions",
+      "cr0f7_venues_SyncErrors": "Sync Errors",
+      "cr0f7_venuesid": "Venues",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Venues_1",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Venues_1 (Views)",
+    "Name": "_cr0f7_venues_views",
+    "RelatedEntityName": "Venues_1",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "45441b5b-4ef4-41e2-be5b-65dae9258d36": "Inactive Venues",
+      "8c2a2478-1259-453a-ad61-4c2c5391e3d9": "Venues Lookup View",
+      "93590e6b-bfe0-43db-ba49-7988b0101868": "Active Venues",
+      "eaca5ce6-607f-4b2b-85ce-85d822295663": "Venues Advanced Find View",
+      "ed0b8b1b-4685-4271-adcf-02f086c0e34d": "Venues Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Venues_1)",
+    "Name": "cr0f7_venues_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Venues_1"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Venues_1",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Venues_1)",
+    "Name": "cr0f7_venues_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Venues_1"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Venues_1",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,132 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr0f7_mentors_forms",
+      "Namespace": "MentorDetails (Forms)",
+      "Values": {
+        "Information": "9af2763e-6d6b-4300-be96-aa9ace562420"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0f7_schooladmin_forms",
+      "Namespace": "SchoolAdmins (Forms)",
+      "Values": {
+        "Information": "6d8250a5-987c-435d-8195-eaa3b2368432",
+        "SchoolAdmin quick view form": "6dfeefda-b6ce-ee11-9079-000d3a24b9ba"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0f7_schoolsireland_forms",
+      "Namespace": "SchoolsIrelands (Forms)",
+      "Values": {
+        "Information": "300c651e-7409-40ae-b007-cc8305c7d444"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0f7_studentsnamesstempinc_forms",
+      "Namespace": "Students Names - STEMP.Incs (Forms)",
+      "Values": {
+        "Information": "164dcf95-da37-48d5-8f6b-f489abf87e6d"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0f7_events_forms",
+      "Namespace": "Events_1 (Forms)",
+      "Values": {
+        "Information": "c21bda1d-40ed-469c-b051-429dc2c09c77"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0f7_studentinformation_forms",
+      "Namespace": "Student Names (Forms)",
+      "Values": {
+        "Information": "a5e2a776-3353-412c-87d5-ef6ddec07242"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0f7_venues_forms",
+      "Namespace": "Venues_1 (Forms)",
+      "Values": {
+        "Information": "3385ad38-722d-46dd-912d-d9bdea6dd68e"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0f7_registrants_forms",
+      "Namespace": "Registrants (Forms)",
+      "Values": {
+        "Information": "d6202b87-8a2d-4bf9-bf88-b319c79bba01"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0f7_schoolnamestest_forms",
+      "Namespace": "SchoolNamesTests (Forms)",
+      "Values": {
+        "Information": "0fbe04e3-d11e-4006-b623-cb61d7f2e699"
+      }
+    },
+    {
+      "Kind": "default.cds_contact_forms",
+      "Namespace": "Contacts (Forms)",
+      "Values": {
+        "account contact card": "29de27bc-a257-4f29-99cf-bab4a84e688f",
+        "Contact": "1fed44d1-ae68-4a41-bd2b-f13acac4acfa",
+        "contact card": "707fc57b-c5e6-471b-a180-e37ed28a38e2",
+        "Contact Card form": "bc0f68dd-a4b1-4a8f-bed3-c8f5db2f89cf",
+        "Contact Quick Create": "661157fe-2fc9-4eaa-835f-5bfa2f7b64f7",
+        "Contact Quick Form": "bdb0ae1c-32fa-4374-b637-8dafe107bc44",
+        "Contact Reference Panel": "d880c3cf-80e2-42f3-82f9-24d040d09f17",
+        "Information": "894cc46a-b0cb-4ab0-8bf6-200544e46a2d",
+        "Invite Web Form": "d6190b35-9474-4098-9698-33f6627eb3bf",
+        "Live Persona Card Form": "449faa0e-f471-48ec-87d0-4719909546d2",
+        "Portal Contact (Enhanced)": "c1c97961-2d42-4103-abf8-2fe2bdf38224",
+        "Profile Web Form (Enhanced)": "bddc0100-0dbe-4562-aafe-31d08c8ab506",
+        "Profile Web Form (Enhanced) - Japanese": "01124dd8-9bff-4cc0-bb33-ea9d943c3f9f",
+        "Recent Cases and Entitlements": "f3b707fb-3b5f-45f9-9c6b-5e573bb5d19e",
+        "Social Profiles": "7bb87dfd-ec3e-4ed9-8e3e-5725d3067295",
+        "Update Contact": "26843818-6508-4afe-9342-5fae2ebf15ca"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0f7_schoolregistration_forms",
+      "Namespace": "School Registrations (Forms)",
+      "Values": {
+        "Information": "c40a4de6-6451-4e5e-987c-f9b5b511a9f9"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0f7_venueregistration_forms",
+      "Namespace": "Venue Registrations (Forms)",
+      "Values": {
+        "Information": "2fe0a280-41c3-4f42-a96c-c7ce1e33b00a"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0f7_mentorcredentials_forms",
+      "Namespace": "MentorCredentials (Forms)",
+      "Values": {
+        "Information": "5c9655aa-3cb4-4df9-9512-99ebee2f93bf"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0f7_mentors_forms",
+      "Namespace": "Mentor Registrations (Forms)",
+      "Values": {
+        "Information": "9af2763e-6d6b-4300-be96-aa9ace562420"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0f7_mentorlogin_forms",
+      "Namespace": "Mentor Logins (Forms)",
+      "Values": {
+        "Information": "7d28e9ad-4b7b-4e28-b4d2-96c987c7ea0c"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0f7_mentors_forms",
+      "Namespace": "Mentors (Forms)",
+      "Values": {
+        "Information": "9af2763e-6d6b-4300-be96-aa9ace562420"
+      }
+    }
+  ]
+}

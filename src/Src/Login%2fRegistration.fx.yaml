@@ -1,0 +1,98 @@
+"'Login/Registration' As screen":
+
+    Rectangle2 As rectangle:
+        Fill: =RGBA(0, 134, 208, 1)
+        Height: =189
+        Width: =556
+        X: =453
+        Y: =57
+        ZIndex: =1
+
+    Label1 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Color: =RGBA(241, 244, 249, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =22
+        Text: ="Login Homepage"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =281
+        X: =590
+        Y: =83
+        ZIndex: =2
+
+    Image6 As image:
+        Height: =189
+        Image: =Maynooth
+        Width: =206
+        X: =29
+        ZIndex: =3
+
+    Label2 As label:
+        Align: =Align.Justify
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 134, 208, 1)
+        Height: =96
+        Size: =14
+        Text: |-
+            ="Please select your login 
+                    reserved area"
+        Width: =244
+        X: =627
+        Y: =130
+        ZIndex: =4
+
+    "'Register School' As button":
+        Height: =71
+        OnSelect: =Navigate('Register School Admin', Transition)
+        Text: ="Register School admin"
+        Width: =175
+        X: =792
+        Y: =361
+        ZIndex: =5
+
+    "'Register Mentor' As button":
+        Height: =51
+        OnSelect: =Navigate('Mentor Sign up', Transition)
+        Text: ="Register Mentor"
+        Width: =175
+        X: =792
+        Y: =487
+        ZIndex: =6
+
+    "'Register Venue' As button":
+        Height: =51
+        OnSelect: =Navigate('New Venue Registration', Transition)
+        Text: ="Register Venue"
+        Width: =175
+        X: =792
+        Y: =596
+        ZIndex: =7
+
+    "'School Log' As button":
+        Height: =71
+        OnSelect: =Navigate('School admin login', Transition)
+        Text: ="School admin Login"
+        Width: =175
+        X: =453
+        Y: =361
+        ZIndex: =8
+
+    "'Mentor Log' As button":
+        Height: =51
+        OnSelect: =Navigate('Mentor Login', Transition)
+        Text: ="Mentor Login"
+        Width: =175
+        X: =452
+        Y: =487
+        ZIndex: =9
+
+    "'Venue Log' As button":
+        Height: =51
+        OnSelect: =Navigate('Venue admin login')
+        Text: ="Venue Login"
+        Width: =175
+        X: =453
+        Y: =596
+        ZIndex: =10
+

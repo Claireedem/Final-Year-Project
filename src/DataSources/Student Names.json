@@ -1,0 +1,103 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr0f7_studentinformations",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr0f7_studentinformation",
+    "MaxGetRowsCount": 500,
+    "Name": "Student Names",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0f7_applicationform": "Application Form ",
+      "cr0f7_email": "Email",
+      "cr0f7_firstname": "First Name",
+      "cr0f7_parentalconsentform": "Parental Consent Form",
+      "cr0f7_parentalconstent_StudentID_cr0f7_studenti": "Parental Constents",
+      "cr0f7_school": "School",
+      "cr0f7_studentid": "StudentID",
+      "cr0f7_studentinformation_AsyncOperations": "System Jobs",
+      "cr0f7_studentinformation_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr0f7_studentinformation_FileAttachments": "FileAttachments",
+      "cr0f7_studentinformation_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr0f7_studentinformation_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr0f7_studentinformation_ProcessSession": "Process Sessions",
+      "cr0f7_studentinformation_SyncErrors": "Sync Errors",
+      "cr0f7_studentinformationid": "Student Information",
+      "cr0f7_surname": "Surname",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Student Names",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Student Names (Views)",
+    "Name": "_cr0f7_studentinformation_views",
+    "RelatedEntityName": "Student Names",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0bff173f-fda7-4a4b-86e2-d1548e50319f": "Student Information Lookup View",
+      "2e5d7e7f-74b2-4842-adec-b0b600a0660d": "Student Information Advanced Find View",
+      "3f5cbfaf-1b6e-4a8f-8600-42e7a4a3dfc5": "Inactive Student Information",
+      "4fbfd6fc-52dc-4e40-9ccc-4ee8d7ea62ae": "Student Information Associated View",
+      "ea127088-a00b-4594-af1b-0d80b0f0f5f7": "Active Student Information"
+    }
+  },
+  {
+    "DisplayName": "Status (Student Names)",
+    "Name": "cr0f7_studentinformation_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Student Names"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Student Names",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Student Names)",
+    "Name": "cr0f7_studentinformation_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Student Names"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Student Names",
+    "Type": "OptionSetInfo"
+  }
+]

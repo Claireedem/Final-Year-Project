@@ -1,0 +1,180 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr0f7_eventses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr0f7_events",
+    "MaxGetRowsCount": 500,
+    "Name": "Events_1",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0f7_address": "Address Line1",
+      "cr0f7_addressline2": "Address Line2",
+      "cr0f7_capacity": "Capacity",
+      "cr0f7_country": "Country",
+      "cr0f7_county": "County",
+      "cr0f7_date": "Date ",
+      "cr0f7_endtime": "EndTime",
+      "cr0f7_eventdescription": "EventDescription",
+      "cr0f7_eventid": "EventID",
+      "cr0f7_eventname": "EventName",
+      "cr0f7_eventorganizer": "EventOrganizer",
+      "cr0f7_events_AsyncOperations": "System Jobs",
+      "cr0f7_events_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr0f7_events_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr0f7_events_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr0f7_events_ProcessSession": "Process Sessions",
+      "cr0f7_events_SyncErrors": "Sync Errors",
+      "cr0f7_eventsid": "Events",
+      "cr0f7_eventstatus": "EventStatus",
+      "cr0f7_hostname": "Venue Name",
+      "cr0f7_newcolumn": "New column",
+      "cr0f7_postalcode": "PostalCode",
+      "cr0f7_starttime": "StartTime",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Events_1",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Events_1 (Views)",
+    "Name": "_cr0f7_events_views",
+    "RelatedEntityName": "Events_1",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "390bc884-ac4c-4be1-abcd-cf63edf4c926": "Inactive Events",
+      "4d07c1a1-ff68-4bff-b30e-7bfc9ca8d2ec": "Events Advanced Find View",
+      "a0e728d1-522e-4f52-9ec1-93b1cec3338e": "Active Events",
+      "b65f263b-3a68-4155-b0ff-b89bf5815525": "Events Associated View",
+      "bd209d12-32a0-4f38-9c5f-bb767d716b61": "Events Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Counties",
+    "Name": "cr0f7_counties",
+    "OptionSetInfoNameMapping": {
+      "377820000": "Carlow",
+      "377820001": "Dublin",
+      "377820002": "Kildare",
+      "377820003": "Kilkenny",
+      "377820004": "Laois",
+      "377820005": "Longford",
+      "377820006": "Louth",
+      "377820007": "Meath",
+      "377820008": "Offaly",
+      "377820009": "Westmeath",
+      "377820010": "Wexford",
+      "377820011": "Wicklow"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0f7_county",
+        "OptionSetReferenceEntityName": "Events_1"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr0f7_county",
+    "RelatedEntityName": "Events_1",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Country",
+    "Name": "cr0f7_country",
+    "OptionSetInfoNameMapping": {
+      "377820000": "Ireland"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0f7_country",
+        "OptionSetReferenceEntityName": "Events_1"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr0f7_country",
+    "RelatedEntityName": "Events_1",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Events_1)",
+    "Name": "cr0f7_events_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Events_1"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Events_1",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Events_1)",
+    "Name": "cr0f7_events_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Events_1"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Events_1",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status",
+    "Name": "cr0f7_status",
+    "OptionSetInfoNameMapping": {
+      "377820000": "Scheduled",
+      "377820001": "Cancelled",
+      "377820002": "Completed"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0f7_eventstatus",
+        "OptionSetReferenceEntityName": "Events_1"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr0f7_eventstatus",
+    "RelatedEntityName": "Events_1",
+    "Type": "OptionSetInfo"
+  }
+]

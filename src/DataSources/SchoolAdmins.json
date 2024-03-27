@@ -1,0 +1,105 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr0f7_schooladmins",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr0f7_schooladmin",
+    "MaxGetRowsCount": 500,
+    "Name": "SchoolAdmins",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0f7_adminid": "AdminID",
+      "cr0f7_dateofbirth": "Date of Registration",
+      "cr0f7_email": "Email",
+      "cr0f7_gender": "Gender",
+      "cr0f7_password": "Password",
+      "cr0f7_passwordconfirmation": "Password Confirmation",
+      "cr0f7_phonenumer": "Phone Numer",
+      "cr0f7_role": "Role",
+      "cr0f7_school": "SchoolName",
+      "cr0f7_schooladmin_AsyncOperations": "System Jobs",
+      "cr0f7_schooladmin_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr0f7_schooladmin_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr0f7_schooladmin_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr0f7_schooladmin_ProcessSession": "Process Sessions",
+      "cr0f7_schooladmin_SyncErrors": "Sync Errors",
+      "cr0f7_schooladminid": "SchoolAdmin",
+      "cr0f7_SchoolID": "SchoolID",
+      "cr0f7_username": "Fullname",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "SchoolAdmins",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "SchoolAdmins (Views)",
+    "Name": "_cr0f7_schooladmin_views",
+    "RelatedEntityName": "SchoolAdmins",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "11248832-9318-403a-8776-433486c539c2": "SchoolAdmin Associated View",
+      "18b18067-9be0-4f2a-9829-04851a5add81": "SchoolAdmin Lookup View",
+      "40ab77ea-c6b6-41fc-a584-8cd6f9b2538d": "SchoolAdmin Advanced Find View",
+      "835be63c-2b1e-4cb6-950c-9dce1afe26f9": "Inactive SchoolAdmins",
+      "d0791f71-ffd5-46dd-a6b2-1cb79e74e4c4": "Active SchoolAdmins"
+    }
+  },
+  {
+    "DisplayName": "Status (SchoolAdmins)",
+    "Name": "cr0f7_schooladmin_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "SchoolAdmins"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "SchoolAdmins",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (SchoolAdmins)",
+    "Name": "cr0f7_schooladmin_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "SchoolAdmins"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "SchoolAdmins",
+    "Type": "OptionSetInfo"
+  }
+]

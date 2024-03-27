@@ -1,0 +1,170 @@
+VenueDetails As screen:
+    BackgroundImage: ='yuriy-kovalev-nN1HSDtKdlw-unsplash'
+    ImagePosition: =ImagePosition.Fill
+
+    Button14_3 As button:
+        OnSelect: =Navigate('Your events')
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =13
+        Text: ="Your Events"
+        X: =310
+        Y: =91
+        ZIndex: =1
+
+    Button14_4 As button:
+        OnSelect: =Navigate(VenueDetails)
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =13
+        Text: ="Details"
+        X: =470
+        Y: =91
+        ZIndex: =2
+
+    Button13_2 As button:
+        OnSelect: =Navigate('Venue Portal')
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =13
+        Text: ="Create Events"
+        Width: =149
+        X: =161
+        Y: =91
+        ZIndex: =3
+
+    Rectangle5 As rectangle:
+        Fill: =Color.White
+        Height: =580
+        Width: =1101
+        X: =161
+        Y: =131
+        ZIndex: =4
+
+    Header2_2 As Header:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =
+        Height: =75
+        Logo: ='STEMP PASSPORTS'
+        OnSelectLogo: =false
+        Title: =App.ActiveScreen.Name
+        UserEmail: =LoggedInVenueEmail
+        UserImage: =User().Image
+        UserName: =LoggedInVenueName
+        Width: =Parent.Width
+        X: =0
+        Y: =0
+        ZIndex: =5
+
+    Icon4 As icon.Waypoint:
+        Height: =75
+        Icon: =Icon.Waypoint
+        Width: =108
+        X: =630
+        Y: =160
+        ZIndex: =6
+
+    Label12 As label:
+        Align: =Align.Center
+        Color: =RGBA(0, 18, 107, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =38
+        Size: =18
+        Text: =LoggedInVenueName
+        Width: =348
+        X: =515
+        Y: =258
+        ZIndex: =7
+
+    Label12_1 As label:
+        Height: =39
+        Text: =LoggedInVenueEmail
+        Width: =382
+        X: =544
+        Y: =365
+        ZIndex: =8
+
+    Label12_2 As label:
+        Text: =LoggedInVenueID
+        X: =544
+        Y: =509
+        ZIndex: =9
+
+    Label12_4 As label:
+        Height: =44
+        Text: =LoggedInVenueDOR
+        Width: =334
+        X: =544
+        Y: =577
+        ZIndex: =11
+
+    Label24 As label:
+        Height: =42
+        Text: =LoggedInVenueNumber
+        Width: =426
+        X: =544
+        Y: =436
+        ZIndex: =12
+
+    Label27_1 As label:
+        Color: =RGBA(0, 18, 107, 1)
+        FontWeight: =FontWeight.Semibold
+        Size: =15
+        Text: |-
+            ="Contact Number :"
+        Width: =198
+        X: =295
+        Y: =438
+        ZIndex: =14
+
+    Label27_2 As label:
+        Color: =RGBA(0, 18, 107, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =36
+        Size: =15
+        Text: |-
+            ="Contact Email :"
+        Width: =175
+        X: =295
+        Y: =368
+        ZIndex: =15
+
+    Label27_3 As label:
+        Color: =RGBA(0, 18, 107, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =36
+        Size: =15
+        Text: ="Date Of Registration"
+        Width: =220
+        X: =295
+        Y: =585
+        ZIndex: =16
+
+    Label27_4 As label:
+        Color: =RGBA(0, 18, 107, 1)
+        FontWeight: =FontWeight.Semibold
+        Size: =15
+        Text: ="VenueID"
+        X: =295
+        Y: =509
+        ZIndex: =17
+
+    Rectangle7 As rectangle:
+        Height: =3
+        Width: =1027
+        X: =198
+        Y: =320
+        ZIndex: =18
+
+    Button16 As button:
+        OnSelect: =Navigate('Login/Registration')
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =13
+        Text: ="Logout"
+        Width: =143
+        X: =631
+        Y: =91
+        ZIndex: =19
+

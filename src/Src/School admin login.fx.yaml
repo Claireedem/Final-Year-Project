@@ -1,0 +1,137 @@
+"'School admin login' As screen":
+    OnVisible: |-
+        =UpdateContext({var_Pass :false})
+
+    Container1_1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Bold
+        Height: =540
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Width: =1029
+        X: =167
+        Y: =139
+        ZIndex: =1
+
+        Label6_2 As label:
+            FontWeight: =FontWeight.Semibold
+            Text: ="Password"
+            X: =84
+            Y: =263
+            ZIndex: =1
+
+        TextInput1_2 As text:
+            Default: =
+            FocusedBorderThickness: =2
+            Height: =57
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Mode: =If(var_Pass,TextMode.Password,TextMode.SingleLine)
+            Width: =860
+            X: =84
+            Y: =316
+            ZIndex: =2
+
+        Icon3_1 As icon.View:
+            Height: =60
+            Icon: =If(var_Pass, Icon.View, Icon.Hide)
+            OnSelect: |-
+                =UpdateContext({var_Pass :!var_Pass})
+            Width: =34
+            X: =886
+            Y: =316
+            ZIndex: =3
+
+        Container2_1 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.Bold
+            Height: =56
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Width: =170
+            X: =750
+            Y: =418
+            ZIndex: =4
+
+    "'Maynooth Logo_6' As image":
+        Height: =138
+        Image: =Maynooth
+        Width: =171
+        X: =32
+        Y: =16
+        ZIndex: =2
+
+    Label5_1 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =20
+        Text: ="LOGIN"
+        X: =203
+        Y: =184
+        ZIndex: =3
+
+    Label6_3 As label:
+        FontWeight: =FontWeight.Semibold
+        Text: ="Email"
+        X: =256
+        Y: =272
+        ZIndex: =4
+
+    TextInput1_3 As text:
+        Clear: =true
+        Default: =
+        FocusedBorderThickness: =2
+        Height: =57
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Width: =872
+        X: =245
+        Y: =324
+        ZIndex: =5
+
+    Button1_1 As button:
+        Height: =64
+        OnSelect: |+
+            =// Look up the record in schooladmin based on the entered email
+            Set(currentUser, LookUp(SchoolAdmins, Email = TextInput1_3.Text));
+            
+            // Check if the lookup was successful and if the entered password matches
+            If(
+                !IsBlank(currentUser) && currentUser.cr0f7_password = TextInput1_2.Text,
+                //Set(currentUser, LookUp(SchoolAdmins, Email = TextInput1_3.Text));
+                Set(LoggedInUserRole, currentUser.cr0f7_role);
+                Set(LoggedInUserName, currentUser.cr0f7_username);
+                Set(LoggedInUserEmail, currentUser.cr0f7_email);
+                Set(LoggedInUserGender, currentUser.cr0f7_gender);
+                Set(LoggedInUserDOB, currentUser.cr0f7_dateofbirth);
+                Set(LoggedInUserSchool, currentUser.cr0f7_school);
+                 Set(LoggedInUserAdminID, currentUser.cr0f7_adminid);
+                 Set(LoggedInUserSchoolID, currentUser.cr0f7_SchoolID);
+                 Set(LoggedInUserPhone, currentUser.cr0f7_phonenumer);
+                // If credentials match, navigate to 'school portal'
+                Navigate('School Portal'),
+                // If credentials don't match, show an error notification
+                Notify("Email or Password is incorrect. Please try again!", NotificationType.Error)
+            );
+            Reset(TextInput1_3);
+            Reset(TextInput1_2);
+            
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: ="LOGIN"
+        Width: =176
+        X: =912
+        Y: =552
+        ZIndex: =6
+
+    Arrow1_1 As arrow.backArrow:
+        Height: =41
+        OnSelect: =Navigate('Login/Registration', Transition)
+        Width: =35
+        X: =52
+        Y: =664
+        ZIndex: =7
+

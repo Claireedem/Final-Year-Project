@@ -1,0 +1,703 @@
+"'View your events' As screen":
+    BackgroundImage: ='yuriy-kovalev-nN1HSDtKdlw-unsplash'
+    ImagePosition: =ImagePosition.Fill
+
+    Button14_6 As button:
+        OnSelect: =
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =13
+        Text: ="Created by you"
+        X: =313
+        Y: =91
+        ZIndex: =1
+
+    Button13_3 As button:
+        OnSelect: =Navigate('Venue Portal')
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =13
+        Text: ="Create Events"
+        Width: =149
+        X: =164
+        Y: =91
+        ZIndex: =2
+
+    Header2_3 As Header:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =
+        Height: =75
+        Logo: ='STEMP PASSPORTS'
+        OnSelectLogo: =false
+        Title: ="View your events"
+        UserEmail: =LoggedInVenueEmail
+        UserImage: =User().Image
+        UserName: =LoggedInVenueName
+        Width: =Parent.Width
+        X: =0
+        Y: =0
+        ZIndex: =4
+
+    Button14_7 As button:
+        OnSelect: =Navigate(VenueDetails)
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =13
+        Text: ="Details"
+        X: =473
+        Y: =91
+        ZIndex: =5
+
+    Rectangle10_1 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =602
+        Width: =1138
+        X: =163
+        Y: =131
+        ZIndex: =6
+
+    FormViewer1 As formViewer:
+        DataSource: =Events_1
+        Height: =465
+        Item: =Gallery6.Selected
+        Width: =936
+        X: =291
+        Y: =176
+        ZIndex: =7
+
+        EventName_DataCard3 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0f7_eventname"
+            Default: =ThisItem.EventName
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"cr0f7_eventname")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =312
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+            DataCardKey13 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue8 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                ZIndex: =2
+
+        EventDescription_DataCard3 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0f7_eventdescription"
+            Default: =ThisItem.EventDescription
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"cr0f7_eventdescription")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =312
+            X: =1
+            Y: =0
+            ZIndex: =8
+
+            DataCardKey15 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue9 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey15.Y + DataCardKey15.Height + 5
+                ZIndex: =2
+
+        "'Date _DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0f7_date"
+            Default: =ThisItem.'Date '
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"cr0f7_date")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =312
+            X: =2
+            Y: =0
+            ZIndex: =8
+
+            DataCardKey17 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue10 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey17.Y + DataCardKey17.Height + 5
+                ZIndex: =2
+
+        StartTime_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0f7_starttime"
+            Default: =ThisItem.StartTime
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"cr0f7_starttime")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =312
+            X: =0
+            Y: =1
+            ZIndex: =8
+
+            DataCardKey18 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue11 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey18.Y + DataCardKey18.Height + 5
+                ZIndex: =2
+
+        EndTime_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0f7_endtime"
+            Default: =ThisItem.EndTime
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"cr0f7_endtime")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =312
+            X: =1
+            Y: =1
+            ZIndex: =8
+
+            DataCardKey19 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue13 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey19.Y + DataCardKey19.Height + 5
+                ZIndex: =2
+
+        "'Venue Name_DataCard3' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0f7_hostname"
+            Default: =ThisItem.'Venue Name'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"cr0f7_hostname")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =312
+            X: =2
+            Y: =1
+            ZIndex: =8
+
+            DataCardKey20 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue14 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey20.Y + DataCardKey20.Height + 5
+                ZIndex: =2
+
+        EventOrganizer_DataCard3 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0f7_eventorganizer"
+            Default: =ThisItem.EventOrganizer
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"cr0f7_eventorganizer")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =312
+            X: =0
+            Y: =2
+            ZIndex: =8
+
+            DataCardKey23 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =34
+                ZIndex: =1
+
+            DataCardValue33 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey23.Y + DataCardKey23.Height + 5
+                ZIndex: =2
+
+        EventStatus_DataCard3 As typedDataCard.comboBoxOptionSetSingleViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0f7_eventstatus"
+            Default: =ThisItem.EventStatus
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"cr0f7_eventstatus")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue34.Selected
+            Width: =312
+            X: =1
+            Y: =2
+            ZIndex: =8
+
+            DataCardKey52 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue34 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =[Parent.Default]
+                DisplayMode: =Parent.DisplayMode
+                IsSearchable: =false
+                Items: =Choices(Status)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SelectMultiple: =false
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey52.Y + DataCardKey52.Height + 5
+                ZIndex: =2
+
+            ErrorMessage9 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue34.Y + DataCardValue34.Height
+                ZIndex: =3
+
+            StarVisible9 As label:
+                Align: =Align.Center
+                Height: =DataCardKey52.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey52.Y
+                ZIndex: =4
+
+        Capacity_DataCard3 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0f7_capacity"
+            Default: =ThisItem.Capacity
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"cr0f7_capacity")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =312
+            X: =2
+            Y: =2
+            ZIndex: =8
+
+            DataCardKey55 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue37 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey55.Y + DataCardKey55.Height + 5
+                ZIndex: =2
+
+        PostalCode_DataCard3 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0f7_postalcode"
+            Default: =ThisItem.PostalCode
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"cr0f7_postalcode")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =312
+            X: =0
+            Y: =3
+            ZIndex: =8
+
+            DataCardKey56 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =34
+                ZIndex: =1
+
+            DataCardValue38 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey56.Y + DataCardKey56.Height + 5
+                ZIndex: =2
+
+        Country_DataCard3 As typedDataCard.comboBoxOptionSetSingleViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0f7_country"
+            Default: =ThisItem.Country
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"cr0f7_country")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue45.Selected
+            Width: =312
+            X: =1
+            Y: =3
+            ZIndex: =8
+
+            DataCardKey59 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue45 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =[Parent.Default]
+                DisplayMode: =Parent.DisplayMode
+                IsSearchable: =false
+                Items: =Choices(Country)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SelectMultiple: =false
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey59.Y + DataCardKey59.Height + 5
+                ZIndex: =2
+
+            ErrorMessage46 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue45.Y + DataCardValue45.Height
+                ZIndex: =3
+
+            StarVisible46 As label:
+                Align: =Align.Center
+                Height: =DataCardKey59.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey59.Y
+                ZIndex: =4
+
+        County_DataCard3 As typedDataCard.comboBoxOptionSetSingleViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0f7_county"
+            Default: =ThisItem.County
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"cr0f7_county")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue46.Selected
+            Width: =312
+            X: =2
+            Y: =3
+            ZIndex: =8
+
+            DataCardKey60 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue46 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =[Parent.Default]
+                DisplayMode: =Parent.DisplayMode
+                IsSearchable: =false
+                Items: =Choices(Counties)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SelectMultiple: =false
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey60.Y + DataCardKey60.Height + 5
+                ZIndex: =2
+
+            ErrorMessage47 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue46.Y + DataCardValue46.Height
+                ZIndex: =3
+
+            StarVisible47 As label:
+                Align: =Align.Center
+                Height: =DataCardKey60.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey60.Y
+                ZIndex: =4
+
+        "'Address Line1_DataCard3' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0f7_address"
+            Default: =ThisItem.'Address Line1'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"cr0f7_address")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =312
+            X: =0
+            Y: =4
+            ZIndex: =8
+
+            DataCardKey57 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =44
+                ZIndex: =1
+
+            DataCardValue39 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey57.Y + DataCardKey57.Height + 5
+                ZIndex: =2
+
+        "'Address Line2_DataCard3' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0f7_addressline2"
+            Default: =ThisItem.'Address Line2'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"cr0f7_addressline2")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =312
+            X: =1
+            Y: =4
+            ZIndex: =8
+
+            DataCardKey58 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =44
+                ZIndex: =1
+
+            DataCardValue40 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey58.Y + DataCardKey58.Height + 5
+                ZIndex: =2
+
+    Button3 As button:
+        Height: =33
+        OnSelect: =Navigate('Edit your events')
+        Text: ="edit"
+        Width: =147
+        X: =1080
+        Y: =656
+        ZIndex: =8
+
+    Icon6 As icon.BackArrow:
+        Height: =48
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('Your events')
+        Width: =34
+        X: =279
+        Y: =656
+        ZIndex: =9
+
+    Button16_3 As button:
+        OnSelect: =Navigate('Login/Registration')
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =13
+        Text: ="Logout"
+        X: =633
+        Y: =91
+        ZIndex: =10
+

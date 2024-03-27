@@ -1,0 +1,100 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr0f7_registrantses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr0f7_registrants",
+    "MaxGetRowsCount": 500,
+    "Name": "Registrants",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0f7_eventid": "EventID",
+      "cr0f7_eventname": "EventName",
+      "cr0f7_eventorganiser": "EventOrganiser",
+      "cr0f7_registrantid": "RegistrantID",
+      "cr0f7_registrants_AsyncOperations": "System Jobs",
+      "cr0f7_registrants_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr0f7_registrants_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr0f7_registrants_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr0f7_registrants_ProcessSession": "Process Sessions",
+      "cr0f7_registrants_SyncErrors": "Sync Errors",
+      "cr0f7_registrantsid": "Registrants",
+      "cr0f7_schooladminmentorname": "SchoolAdmin/MentorName",
+      "cr0f7_userid": "SchoolAdmin/MentorID",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Registrants",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Registrants (Views)",
+    "Name": "_cr0f7_registrants_views",
+    "RelatedEntityName": "Registrants",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "290170c3-edd0-440e-a42a-2ea71151737f": "Active Registrants",
+      "2b1a0941-4911-44c9-b36b-1de9ceb25678": "Inactive Registrants",
+      "74e1b879-4b3b-4ab0-8ef7-1d2085d09af1": "Registrants Associated View",
+      "81c3b68b-ee4e-4088-876b-d281a63d6e37": "Registrants Advanced Find View",
+      "a324f736-0f79-4498-9150-a7c819d997e5": "Registrants Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Registrants)",
+    "Name": "cr0f7_registrants_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Registrants"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Registrants",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Registrants)",
+    "Name": "cr0f7_registrants_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Registrants"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Registrants",
+    "Type": "OptionSetInfo"
+  }
+]

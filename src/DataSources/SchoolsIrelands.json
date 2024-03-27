@@ -1,0 +1,149 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr0f7_schoolsirelands",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr0f7_schoolsireland",
+    "MaxGetRowsCount": 500,
+    "Name": "SchoolsIrelands",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0f7_address": "Address",
+      "cr0f7_deisindicator": "DeisIndicator",
+      "cr0f7_email": "Email",
+      "cr0f7_enrolmentgirls": "EnrolmentGirls",
+      "cr0f7_phonenumber": "PhoneNumber",
+      "cr0f7_principalname": "PrincipalName",
+      "cr0f7_rollnumber": "RollNumber",
+      "cr0f7_schooladmin_SchoolID_cr0f7_schoolsireland": "SchoolAdmin",
+      "cr0f7_schoolidentifier": "SchoolIDentifier",
+      "cr0f7_schoolname": "SchoolName",
+      "cr0f7_schoolsireland_AsyncOperations": "System Jobs",
+      "cr0f7_schoolsireland_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr0f7_schoolsireland_connections1": "Connections (cr0f7_schoolsireland_connections1)",
+      "cr0f7_schoolsireland_connections2": "Connections (cr0f7_schoolsireland_connections2)",
+      "cr0f7_schoolsireland_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr0f7_schoolsireland_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr0f7_schoolsireland_ProcessSession": "Process Sessions",
+      "cr0f7_schoolsireland_SyncErrors": "Sync Errors",
+      "cr0f7_schoolsirelandid": "SchoolsIreland",
+      "cr0f7_studentsnamesstempinc_SchoolID_cr0f7_scho": "Students Names - STEMP.Inc",
+      "cr0f7_transisitionyearindicator": "TransisitionYearIndicator",
+      "cr0f7_website": "Website",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "SchoolsIrelands",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "SchoolsIrelands (Views)",
+    "Name": "_cr0f7_schoolsireland_views",
+    "RelatedEntityName": "SchoolsIrelands",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "03e7069c-785d-4ed3-abb2-f57a029e576d": "SchoolsIreland Advanced Find View",
+      "2f1154ff-cf07-4d00-9942-7d048747b1b0": "SchoolsIreland Lookup View",
+      "584b1cb2-ce23-4e9d-b31a-986b0fabc1fc": "Inactive SchoolsIrelands",
+      "944345b3-95c7-4abe-8225-03e1fcd57933": "SchoolsIreland Associated View",
+      "b605d350-4c4a-45e3-91eb-0584398958d0": "Active SchoolsIrelands"
+    }
+  },
+  {
+    "DisplayName": "DeisIndicator (SchoolsIrelands)",
+    "Name": "cr0f7_schoolsireland_cr0f7_deisindicator",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0f7_deisindicator",
+        "OptionSetReferenceEntityName": "SchoolsIrelands"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0f7_deisindicator",
+    "RelatedEntityName": "SchoolsIrelands",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "TransisitionYearIndicator (SchoolsIrelands)",
+    "Name": "cr0f7_schoolsireland_cr0f7_transisitionyearindicator",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0f7_transisitionyearindicator",
+        "OptionSetReferenceEntityName": "SchoolsIrelands"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0f7_transisitionyearindicator",
+    "RelatedEntityName": "SchoolsIrelands",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (SchoolsIrelands)",
+    "Name": "cr0f7_schoolsireland_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "SchoolsIrelands"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "SchoolsIrelands",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (SchoolsIrelands)",
+    "Name": "cr0f7_schoolsireland_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "SchoolsIrelands"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "SchoolsIrelands",
+    "Type": "OptionSetInfo"
+  }
+]
